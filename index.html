@@ -136,10 +136,35 @@
 
         var adeeGeom = new THREE.PlaneBufferGeometry(200, 200);
 
-        var adee = new THREE.Mesh(adeeGeom, adeeMaterial);
-        adee.name = 'Adee';
-        adee.position.set(0, 70, -100);
-        scene.add(adee);
+        var adee1 = new THREE.Mesh(adeeGeom, adeeMaterial);
+        adee1.name = 'Adee1';
+        adee1.position.set(0, 70, -100);
+        scene.add(adee1);
+
+        var adee2 = new THREE.Mesh(adeeGeom, adeeMaterial);
+        adee2.name = 'Adee2';
+        adee2.position.set(200, 70, -20);
+        adee2.rotation.y = -20;
+        scene.add(adee2);
+
+        var adee3 = new THREE.Mesh(adeeGeom, adeeMaterial);
+        adee3.name = 'Adee3';
+        adee3.position.set(300, 150, 290);
+        adee3.rotation.y = -40;
+        adee3.scale.set(1.5, 1.5, 1.5);
+        scene.add(adee3);
+
+        var adee4 = new THREE.Mesh(adeeGeom, adeeMaterial);
+        adee4.name = 'Adee4';
+        adee4.position.set(-190, 80, 100);
+        adee4.rotation.y = 1.4;
+        scene.add(adee4);
+
+        var adee5 = new THREE.Mesh(adeeGeom, adeeMaterial);
+        adee5.name = 'Adee5';
+        adee5.position.set(-40, 80, 180);
+        adee5.rotation.y = 2.8;
+        scene.add(adee5);
 
         clock = new THREE.Clock();
 
